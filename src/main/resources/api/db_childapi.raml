@@ -1,0 +1,15 @@
+#%RAML 1.0
+title: db_childapi
+version: v1
+
+/datatable:
+  get:
+    description: Reading a Database Table.
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "message": "Table from database is read."
+              }
